@@ -1,3 +1,15 @@
+
+def decode(s):
+    result = ""
+    for i in s:
+        if int(i) > 3:
+            result += str(int(i) - 3)
+        else:
+            result += str((int(i) + 10) - 3)
+    return result
+
+
+
 prompt_continue = True
 while prompt_continue:
     menu = "Menu\n------------\n1. Encode\n2. Decode\n3. Quit\n"
